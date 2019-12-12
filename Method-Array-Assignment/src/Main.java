@@ -10,6 +10,7 @@ public class Main {
         for(int i = 0;i<arrTest.length;i++){
             arrAdded[i] = arrTest[i];
         }
+
         arrAdded[arrTest.length] = b;
         return arrAdded;
     }
@@ -21,8 +22,10 @@ public class Main {
         for (int a = 0;a<d;a++){
             arrDelete[a]=arrTest[a];
         }
+
         return arrDelete;
     }
+
     //Problem 3 Method
     static int[] arrIns(int[] arrTest, int indexPos, int valueAdd ){
         int [] arrInserted = new int[arrTest.length+1];
@@ -37,16 +40,20 @@ public class Main {
                 arrInserted[b] = arrTest[b-1];
             }
         }
+
         return arrInserted;
     }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
         //Original Array
         System.out.println("The original array:");
         int [] arrOne = new int [5];
         for(int i = 0;i<arrOne.length;i++){
             arrOne[i] = i;
         }
+
         //Problem 1 (Adds a number to the end of an array)
         System.out.println(Arrays.toString(arrOne));
         System.out.println("What value would you like to add to the end of this array?");
