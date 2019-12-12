@@ -56,23 +56,19 @@ public class Main {
 
         //Problem 1 (Adds a number to the end of an array)
         System.out.println(Arrays.toString(arrOne));
-        System.out.println("What value would you like to add to the end of this array?");
+        System.out.println("Enter a value to add at the end of the array");
         int userAdd = Integer.parseInt(scan.nextLine());
         System.out.println(Arrays.toString(arrAdd(arrOne, userAdd)));
 
         //Problem 2 (Delete a value at the end of an array  by 1)
-        System.out.println("Here's the array with the last digit deleted!");
-        System.out.println(Arrays.toString(arrDel(arrOne)));
+        System.out.println("Here's the array with the last digit deleted!" + Arrays.toString(arrDel(arrOne)));
 
         //Problem 3 (Insert at t a value specific index value)
-        System.out.println("Now here's the original array again:");
-        System.out.println(Arrays.toString(arrOne));
+        System.out.println("Now here's the original array again:" + "\n" + Arrays.toString(arrOne));
         System.out.println("Which position would you like to add a value? (0-5)");
         int userPos = Integer.parseInt(scan.nextLine());
         System.out.println("What value would you like to add in this position?");
         int userValue = Integer.parseInt(scan.nextLine());
         System.out.println(Arrays.toString(arrIns(arrOne,userPos, userValue)));
-
     }
-
 }
